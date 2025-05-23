@@ -8,42 +8,72 @@
     "version": "1.0.0",
     "attributes": {
       "metadata": {
-        "title": "Search | Globus Search Portal"
+        "title": "test-local"
       },
       "content": {
-        "headline": "Globus Search Portal"
+        "headline": "test-local"
       },
       "features": {
         "transfer": false
       },
       "components": {
         "Result": {
-          "heading": "entries[0].content.name",
+          "heading": "entries[0].content.file.filename",
           "fields": [
             {
-              "label": "Tags",
-              "property": "entries[0].content.tags"
+              "label": "Directory",
+              "property": "entries[0].content.file.directory"
             },
             {
-              "label": "Region",
-              "property": "entries[0].content.region"
+              "label": "Size",
+              "property": "entries[0].content.file.size_bytes"
+            },
+            {
+              "label": "Extension",
+              "property": "entries[0].content.file.extension"
+            },
+            {
+              "label": "Language",
+              "property": "entries[0].content.language"
+            },
+            {
+              "label": "Line Count",
+              "property": "entries[0].content.line_count"
+            },
+            {
+              "label": "Complexity",
+              "property": "entries[0].content.complexity"
+            },
+            {
+              "label": "Imports",
+              "property": "entries[0].content.imports"
+            },
+            {
+              "label": "Content Preview",
+              "property": "entries[0].content.content_preview"
             }
           ]
         }
       },
       "globus": {
         "search": {
-          "index": "78b92aca-e361-4307-8f66-bc448f20e2c3",
+          "index": "a0c4dc47-8cd1-4e26-b61a-85b29c1812eb",
           "facets": [
             {
-              "name": "Tags",
-              "field_name": "tags",
+              "name": "Directory",
+              "field_name": "file.directory",
               "type": "terms",
               "size": 10
             },
             {
-              "name": "Region",
-              "field_name": "region",
+              "name": "Extension",
+              "field_name": "file.extension",
+              "type": "terms",
+              "size": 10
+            },
+            {
+              "name": "Language",
+              "field_name": "language",
               "type": "terms",
               "size": 10
             }
